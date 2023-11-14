@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DiabetesPrediction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_above="@id/diabetesLinearLayout"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/diabetes"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:text="Diabetes Prediction"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diabetesLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/diabetesBmiEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/blue_edit_text_bg"
+            android:ems="10"
+            android:hint="Enter BMI"
+            android:inputType="numberDecimal"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/diabetesAgeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/blue_edit_text_bg"
+            android:ems="10"
+            android:hint="Enter Age"
+            android:inputType="numberDecimal"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/diabetesGlucoseEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/blue_edit_text_bg"
+            android:ems="10"
+            android:hint="Enter Glucose"
+            android:inputType="numberDecimal"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getDiabetesPrediction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/blue_button_bg"
+            android:ems="10"
+            android:text="Get Prediction"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/diabetesPredictionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediction: "
+            android:textStyle="bold"
+            android:textColor="@color/coral" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diabetesLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/diabetesProgressBar"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

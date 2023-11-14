@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".BrainTumourPrediction">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/brain_tumour"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/light_blue"
+        android:id="@+id/brainMriImageView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button_bg"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:id="@+id/brainUploadScan"
+        android:text="Upload Scan"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button_bg"
+        android:ems="10"
+        android:id="@+id/brainGetPrediction"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:text="Get Prediction"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mriPredictionTextView"
+        android:textStyle="bold"
+        android:textColor="@color/darkest_blue"
+        android:textSize="16sp"
+        android:text="Prediction:"/>
+
+</LinearLayout>

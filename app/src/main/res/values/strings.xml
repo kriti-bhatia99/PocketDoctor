@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pocket Doctor</string>
+    <string name="pref_title">userData</string>
+    <string name="pref_id">userId</string>
+    <string name="pref_phone">userPhone</string>
+    <string name="pref_name">userName</string>
+    <string name="pref_gender">userGender</string>
+    <string name="pref_age">userAge</string>
+
+    <string name="ip">http://192.168.29.3/pocket_doctor/</string>
+    <string name="api_url">https://pocket-doctor-api.herokuapp.com/</string>
+    <string name="thingspeak_api_url">https://api.thingspeak.com/channels/1763888/feeds.json?api_key=8NA4SO35AYEID7D7</string>
+
+</resources>

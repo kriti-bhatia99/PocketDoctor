@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "401709619540",
+    "project_id": "pocket-doctor-ffbea",
+    "storage_bucket": "pocket-doctor-ffbea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401709619540:android:78623fb6978b41621890c1",
+        "android_client_info": {
+          "package_name": "com.example.pocketdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401709619540-5ihm3132anmmc13u5122i2ius9h5p886.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pocketdoctor",
+            "certificate_hash": "1ad4faf1e721ff49a881b14a11ad8301488dcca3"
+          }
+        },
+        {
+          "client_id": "401709619540-dnbcf9fkfoiaj9hb848t4d9s2k2qf3l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdvK8i1AsFHvAlLY5cXaFOLZX0YzA7oZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401709619540-dnbcf9fkfoiaj9hb848t4d9s2k2qf3l6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
